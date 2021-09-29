@@ -31,10 +31,22 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  created() {
+    const url = 'https://jsonplaceholder.typicode.com/users';
+    axios.get(url)
+      .then(function(response) {
+        console.log(response.data);
+      })
+      .catch(function(error) {
+        console.log(error);
+      })
   }
 }
 </script>

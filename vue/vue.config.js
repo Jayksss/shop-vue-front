@@ -8,8 +8,8 @@ module.exports = {
   outputDir: "../src/main/resources/static",
   indexPath: "../static/index.html",
   devServer: {
-      port : 8082   // 접속 포트 변경
-    , proxy: "http://localhost:8082"     // devServer :  Back-End , 즉 Spring Boot의 내장 was의 주소를 작성하게 되면 된다.
+      port : 8081   // 접속 포트 변경
+    , proxy: "http://localhost:8081"     // devServer :  Back-End , 즉 Spring Boot의 내장 was의 주소를 작성하게 되면 된다.
   },
   chainWebpack: config => {
     const svgRule = config.module.rule("svg");
