@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Vue를 이용한 사이트 구축"/>
     <Footer />
   </div>
 </template>
