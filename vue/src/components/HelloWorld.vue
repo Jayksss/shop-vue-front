@@ -39,7 +39,7 @@ export default {
     msg: String
   },
   created() {
-    const url = 'https://jsonplaceholder.typicode.com/users';
+    const url = '/user/list';
     axios.get(url)
       .then(function(response) {
         console.log(response.data);
